@@ -48,6 +48,13 @@ class Person(object):
     '''
     def set_profession(self,data):
         self.profession = random_profession(data)
+
+
+     '''
+     this function generate random involvement in social work
+     '''
+    def set_social_work(self,data):
+        self.social_work = random_social_work(data)
     
     
     
@@ -114,6 +121,12 @@ def random_profession(data):
     prof = {"major": major, "branch":branch}
     return prof
 
+'''
+this function generate a random social work
+'''
+def random_social_work(data):
+    social_act=random.choice(data)
+    return social_act
 
 
 
